@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안다미로</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="sec_header">
+            <div class="container">
+                <div class="header">
+                    <ul class="sns">
+                        <li>
+                            <a href="https://www.facebook.com/baskinrobbinskr/" target="_blank">
+                                <img src="./images/icon_facebook.png" alt="페이스북">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/BaskinrobbinsKR" target="_blank">
+                                <img src="./images/icon_twitter.png" alt="트위트">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blog.naver.com/brgirl31" target="_blank">
+                                <img src="./images/icon_blog.png" alt="블로그">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/baskinrobbinskorea/" target="_blank">
+                                <img src="./images/icon_instgram.png" alt="인스타">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/baskinrobbinskorea" target="_blank">
+                                <img src="./images/icon_youtube.png" alt="유튜브">
+                            </a>
+                        </li>
+                    </ul>
+                    <h1 class="logo">
+                        <a href="/"><img src="./images/logo.png" alt="로고이미지"></a>
+                    </h1>
+                    <ul class="call">
+                        <li>
+                            <a href="https://www.facebook.com/baskinrobbinskr/" target="_blank">
+                                고객센터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/BaskinrobbinsKR" target="_blank">
+                                CONTACTUS
+                            </a>
+                        </li>
+                        <li>
+                            <span id="btnIcon">
+                                <a href="javascript:goSearch();">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav_back">
+                <div class="nav_back_hidden">
+                    <figure>
+                        <img src="./images/1.png" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/1.png" alt="">
+                    </figure>
+                </div>
+                <button onclick="clickBtn();" class="nav_back_btn">▼ MONTHLY DUNKIN</button>
+            </div>
+        </header>
+        <ul class="sec_gnb">
+            <div class="container">
+                <div class="gnb">
+                    <div class="box">
+                        <li>
+                            <a href="#">LOGIN</a>
+                        </li>
+                        <li>
+                            <a href="#">JOIN</a>
+                        </li>
+                    </div>
+                    <li>
+                        <a href="#">FLAVOR OF THE MONTH</a>
+                    </li>
+                    <li>
+                        <a href="#">MENU</a>
+                    </li>
+                    <li>
+                        <a href="#">영양 성분 및 알레르기</a>
+                    </li>
+                    <li>
+                        <a href="#">EVENT</a>
+                    </li>
+                    <li>
+                        <a href="#">STORE</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                </div>
+            </div>
+            <div class="sec_modal">
+                <div class="inner">
+                    <div class="modal">
+                        <table>
+                            <tr>
+                                <td>제품명</td>
+                                <td width="10%">
+                                    <select>
+                                        <option>전체</option>
+                                    </select>
+                                </td>
+                                <td width="21%">
+                                    <input type="text" id="title">
+                                </td>
+                                <td id="tdLeft">해시태그</td>
+                                <td width="45%">
+                                    <input type="text" id="title">
+                                </td>
+                            </tr>
+                            <tr id="right">
+                                <td colspan="5">
+                                    <p>자주 찾는 해시태그</p>
+                                    <p><span>#구름속시나모롤</span><span>#시나모롤의구름속피크닉</span><span>#시나모롤소다블라스트</span><span>#시나모롤말랑말랑구름찰떡</span></p>
+                                </td>
+                            </tr>
+                            <tr id="left">
+                                <td>
+                                    알레르기 성분
+                                </td>
+                                <td colspan="4">
+                                    <div class="left_item">
+                                        <input type="checkbox" value="계란">
+                                        <p>계란</p>
+                                        <input type="checkbox" value="대두">
+                                        <p>대두</p>
+                                        <input type="checkbox" value="돼지고기">
+                                        <p>돼지고기</p>
+                                        <input type="checkbox" value="땅콩">
+                                        <p>땅콩</p>
+                                    </div>
+                                    <div class="left_item">
+                                        <input type="checkbox" value="밀">
+                                        <p>밀</p>
+                                        <input type="checkbox" value="복숭아">
+                                        <p>복숭아</p>
+                                        <input type="checkbox" value="우유">
+                                        <p>우유</p>
+                                        <input type="checkbox" value="없음">
+                                        <p>없음</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="last">
+                                <td colspan="5">
+                                    <button>검색</button>
+                                <td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        <section class="sec_visual1">
+            <img src="./images/visual.png" alt="메인 이미지">
+        </section>
+        
+        
+        
+        
+        <section class="sec_visual2">
+            
+        </section>
+        
+        
+        <footer class="sec_footer">
+            <div class="container">
+                <div class="footer">
+                    --푸터 영역 코딩--
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var header = document.querySelector('.sec_header');
+        var sec_modal = document.querySelector('.sec_modal');
+        var btnIcon = document.querySelector('#btnIcon');
+
+        function clickBtn() {
+            header.classList.toggle('active');
+        }
+
+        function goSearch() {
+            sec_modal.classList.toggle('active');
+            btnIcon.innerHTML = ''
+                                +'<a href="javascript:goOrignSerach();">'
+                                +'<i class="fa-solid fa-xmark"></i>'
+                                +'</a>';
+        }
+        
+        function goOrignSerach(){
+            sec_modal.classList.toggle('active');
+            btnIcon.innerHTML = ''
+                                +'<a href="javascript:goSearch();">'
+                                +'<i class="fa-solid fa-magnifying-glass"></i>'
+                                +'</a>';
+        }
+    </script>
+
+</body>
+
+</html>
